@@ -1,0 +1,132 @@
+/* ====================== Home pagina CSS =================== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4e3;
+    color: #333;
+}
+
+header {
+    background-image: url(/Images/bg.jpg);
+    color: rgb(228, 173, 54);
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+header .logo p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: large;
+    text-decoration: underline;
+    color: rgb(223, 194, 132);
+    font-weight: bold;
+}
+
+.homePage {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    text-align: center;
+    padding: 2rem;
+    background-image: url('/Images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(250, 246, 246);
+}
+
+.homePage h2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.homePage p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.homePage .btn {
+    background-color:  rgb(228, 173, 54);
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.homePage .btn:hover {
+    background-color: rgb(223, 194, 132);
+}
+
+.popular-pizzas {
+    padding: 2rem;
+    text-align: center;
+}
+
+.popular-pizzas h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.pizza-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pizza {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    padding: 1rem;
+    text-align: center;
+}
+
+.pizza img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+footer {
+    margin-top: 6rem;
+    text-align: center;
+    padding: 1rem;
+    background-image: url(/Images/bg.jpg);
+    color: white;
+}
+
+/* ====================== Pizza pagina CSS =================== */
+
+
+.pizzaMenu h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
