@@ -11,12 +11,7 @@
       <form class="login-form">
         <div class="loginTitle">
           <h1>Pizzaria Sola Machina</h1>
-          <button
-            id="homeButton"
-            onclick="location.href='home.html'"
-            type="button"
-          >
-            <!--default type = submit-->
+          <button id="homeButton" onclick="location.href='home.html'" type="button"> <!--default type = submit-->
             Ga naar home pagina
           </button>
           <h1></h1>
@@ -24,13 +19,21 @@
         <h2>Inloggen</h2>
         <label for="user-type">Type login:</label>
         <select id="user-type" name="user-type" required>
-          <option value="user">Klant</option>
+            <option value="staff">Personeel</option>
         </select>
+        <label for="staffID">Personeel ID</label>
+        <input
+          type="text"
+          id="staffID"
+          name="Personeel ID"
+          placeholder="Geef personeel ID op"
+          required
+        />
 
         <label for="username">Gebruikersnaam</label>
         <input
           type="text"
-          id="usernameUser"
+          id="usernameStaff"
           name="username"
           placeholder="Voer je gebruikersnaam in"
           required
@@ -39,28 +42,19 @@
         <label for="password">Wachtwoord</label>
         <input
           type="password"
-          id="passwordUser"
-          name="password"
+          id="passwordStaff"
+          name="Wachtwoord"
           placeholder="Voer je wachtwoord in"
           required
         />
 
-        <button onclick="location.href='accountPaginaUser.html'" type="submit">Inloggen</button>
-
-        <div class="andereLoginKeuze">
-          <h1></h1>
-          <a href="/HTML/accountRegisreren.html">Nog geen account? Registreer hier</a>
-          <br />
-          <br />
+        <button
+        onclick="location.href='accountPaginaStaff.html'"
+        type="button"
+        >Inloggen
+        </button>
         </div>
-        <h2>Personeel?</h2>
       </form>
-      <button 
-      class="staffLogin"
-      onclick="location.href='inlogPersoneel.html'"
-      type="button"
-      >Klik hier om in te loggen
-      </button>
     </div>
   </body>
 </html>

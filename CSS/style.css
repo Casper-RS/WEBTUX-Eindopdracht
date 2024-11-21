@@ -6,7 +6,7 @@
     margin-bottom: 1rem;
 }
 
-/* ====================== Home pagina CSS =================== */
+/* ========================================= Home pagina CSS ========================================= */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 header .logo h1 {
@@ -39,6 +40,7 @@ nav ul {
     padding: 0rem;
     display: flex;
     gap: 1.5rem;
+
 }
 
 nav ul li {
@@ -124,7 +126,7 @@ footer {
     color: white;
 }
 
-/* ====================== Pizza pagina CSS =================== */
+/* ========================================= Pizza pagina CSS ========================================= */
 .pizzaListItem {
     /* display: grid;
     grid-template-columns: 1fr; */
@@ -174,7 +176,7 @@ button:hover {
 
 }
 
-/* ====================== Inlog pagina CSS =================== */
+/* ========================================= Inlog pagina CSS ====================================== */
 
 /* styles.css */
 
@@ -190,8 +192,7 @@ button:hover {
 
 .loginTitle {
     text-align: center;
-    background-image: url("/Images/bg.jpg");
-    color: rgb(228, 173, 54);
+    color: darkorange;
     border-radius: 10px;
     border-color: gray;
     margin-bottom: 1rem;
@@ -212,7 +213,7 @@ button:hover {
 .login-container {
     justify-content: center;
     align-items: center;
-    background:  white;
+    background-image: url("/Images/inlogbg.jpg");
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -228,13 +229,19 @@ button:hover {
 .login-form h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: darkorange;
 }
 
 .login-form label {
-    font-size: 14px;
+    font-size: 15px;
+    font-family: cursive;
+    text-decoration: underline;
     margin-bottom: 0.5rem;
-    color: #555;
+    color: rgb(228, 188, 102);
+}
+
+.staffLogin {
+    margin-left: 6rem;
 }
 
 select,
@@ -276,3 +283,109 @@ input {
 .andereLoginKeuze a:hover {
     text-decoration: underline;
 }
+
+/* ========================================= User Account pagina CSS ========================================= */
+.account-page {
+    padding: 2rem;
+}
+
+.user-info {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.order-status {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.order {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+}
+
+.order h3 {
+    margin-top: 0;
+}
+
+.order-items {
+    list-style: none;
+    padding: 0;
+}
+
+.order-items li {
+    padding: 0.5rem 0;
+}
+
+/* Bestellingsstatus kleuren */
+.status {
+    font-weight: bold;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.status.in-progress {
+    background-color: #ffc107;
+    color: white;
+}
+
+.status.delivered {
+    background-color: #28a745;
+    color: white;
+}
+
+/* ========================================= Staff Account pagina CSS ========================================= */
+.staff-page {
+    padding: 2rem;
+}
+
+
+/* Bestellingsbeheer knoppen */
+.order-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.order-actions .btn {
+    padding: 0.8rem 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.order-actions .btn:hover {
+    background-color: #0056b3;
+}
+
+.order-actions .btn.delete-order {
+    background-color: #dc3545;
+}
+
+.order-actions .btn.delete-order:hover {
+    background-color: #c82333;
+}
+
+/* ========================================= Idk yet ========================================= */
+
+
+
+/* ========================================= Idk yet ========================================= */
+
+
+
+/* ========================================= Idk yet ========================================= */
+
+
+
+/* ========================================= Idk yet ========================================= */
