@@ -6,23 +6,16 @@
     <title>Login | Pizzeria Sole Machina</title>
     <link rel="stylesheet" href="/CSS/style.css" />
   </head>
-  <header class="inlogNav">
-    <div class="logo">
-      <h1>Sole Machina</h1>
-      <p>Elke dag vers bereid!</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/HTML/home.html">Home</a></li>
-        <li><a href="/HTML/pizza.html">Pizza's</a></li>
-        <li><a href="/HTML/inlogScherm.html">Account</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
   <body class="inlogScherm">
     <div class="login-container">
       <form class="login-form">
+        <div class="loginTitle">
+          <h1>Pizzaria Sola Machina</h1>
+          <button id="homeButton" onclick="location.href='home.html'" type="button"> <!--default type = submit-->
+            Ga naar home pagina
+          </button>
+          <h1></h1>
+        </div>
         <h2>Inloggen</h2>
         <label for="user-type">Ik ben:</label>
         <select id="user-type" name="user-type" required>
@@ -51,8 +44,8 @@
         <button type="submit">Inloggen</button>
 
         <div class="andereLoginKeuze">
-          <a href="#">Wachtwoord vergeten?</a>
-          <a href="#">Nog geen account? Registreer hier</a>
+          <a href="#">Nog geen account? Registreer hier</a><br>
+          <a href="#">Wachtwoord vergeten?</a> 
         </div>
       </form>
     </div>

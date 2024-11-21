@@ -177,23 +177,47 @@ button:hover {
 /* ====================== Inlog pagina CSS =================== */
 
 /* styles.css */
+
 .inlogScherm {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #fdf4e3;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
+.loginTitle {
+    text-align: center;
+    background-image: url("/Images/bg.jpg");
+    color: rgb(228, 173, 54);
+    border-radius: 10px;
+    border-color: gray;
+    margin-bottom: 1rem;
+
+}
+
+.loginTitle #homeButton{
+    background-color: orange;
+    border-width: 1px;
+    border-color: darkorange;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.3s;
+    padding: 4px 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border-style: solid;
+}
 .login-container {
-    background: white;
+    justify-content: center;
+    align-items: center;
+    background:  white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 350px;
+    
 }
 
 .login-form {
