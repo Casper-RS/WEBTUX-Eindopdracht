@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Pizzeria Sole Machina</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <header class="inlogNav">
+    <div class="logo">
+      <h1>Sole Machina</h1>
+      <p>Elke dag vers bereid!</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/HTML/home.html">Home</a></li>
+        <li><a href="/HTML/pizza.html">Pizza's</a></li>
+        <li><a href="/HTML/inlogScherm.html">Account</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <body class="inlogScherm">
+    <div class="login-container">
+      <form class="login-form">
+        <h2>Inloggen</h2>
+        <label for="user-type">Ik ben:</label>
+        <select id="user-type" name="user-type" required>
+          <option value="user">Klant</option>
+          <option value="staff">Personeel</option>
+        </select>
+
+        <label for="username">Gebruikersnaam</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Voer je gebruikersnaam in"
+          required
+        />
+
+        <label for="password">Wachtwoord</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Voer je wachtwoord in"
+          required
+        />
+
+        <button type="submit">Inloggen</button>
+
+        <div class="andereLoginKeuze">
+          <a href="#">Wachtwoord vergeten?</a>
+          <a href="#">Nog geen account? Registreer hier</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
