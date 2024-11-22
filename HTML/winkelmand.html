@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelmand | Pizzeria Bella Italia</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sole Machina</h1>
+            <p>Elke dag vers bereid!</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/HTML/home.html">Home</a></li>
+                <li><a href="/HTML/pizza.html">Pizza's</a></li>
+                <li><a href="/HTML/inlogScherm.html">Account</a></li>
+                <li><a href="/HTML/winkelmand.html">
+                    <span class="cart-icon"> <img src="/Images/shopping-cart.png" alt="cart"></span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cart-page">
+        <h2>Je Winkelmand</h2>
+
+        <!-- Winkelmand item 1 -->
+        <div class="cart-item">
+            <img src="/Images/margerita.png" alt="Pizza Margherita" class="cart-item-img">
+            <div class="cart-item-details">
+                <h3>Pizza Margherita</h3>
+                <p>Prijs: €10,00</p>
+                <h4></h4>
+                <label for="quantity1">Aantal:</label>
+                 <div class="quantity-control">
+                    <button class="minus-btn">-</button>
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="2" class="quantity-input">
+                    <button class="plus-btn">+</button>
+                </div>
+            </div>
+            <button class="remove-btn">
+                <img src="/Images/recycle-bin.png" alt="trashcan">
+                <i class="removeItem"></i>
+            </button>            
+        </div>
+
+        <!-- Winkelmand item 2 -->
+        <div class="cart-item">
+            <img src="/Images/salami.png" alt="Pizza Pepperoni" class="cart-item-img">
+            <div class="cart-item-details">
+                <h3>Pizza Pepperoni</h3>
+                <h4></h4>
+                <p>Prijs: €12,00</p>
+                <div class="quantity-control">
+                    <button class="minus-btn">-</button>
+                    <input type="number" id="quantity1" name="quantity1" min="1" max="10" value="2" class="quantity-input">
+                    <button class="plus-btn">+</button>
+                </div>
+            </div>
+            <button class="remove-btn">
+                <img src="/Images/recycle-bin.png" alt="trashcan">
+                <i class="removeItem"></i>
+            </button>              
+        </div>
+
+        <div class="cart-total">
+            <h3>Totaal: €32,00</h3>
+            <button class="checkout-btn">Afrekenen</button>
+        </div>
+    </main>
+
+    <footer class="footerBasket">
+        <p>&copy; 2024 Pizzeria Bella Italia. Alle rechten voorbehouden.</p>
+    </footer>
+    <script>
+        //Functie + & - knoppen
+        document.querySelectorAll('.plus-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                let input = this.previousElementSibling;
+                if (input.value < 10) input.value = parseInt(input.value) + 1;
+            });
+        });
+
+        document.querySelectorAll('.minus-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                let input = this.nextElementSibling;
+                if (input.value > 1) input.value = parseInt(input.value) - 1;
+            });
+        });
+
+
+
+
+        // Simpele verwijderfunctie (dit heb ik opgezocht lol)
+        const removeBtns = document.querySelectorAll('.remove-btn');
+        removeBtns.forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.remove();  // Verwijdert het item uit de DOM
+                // Hier kun je later ook de totale prijs herberekenen of een database updaten.
+            });
+        });
+    </script>    
+</body>
+</html>
