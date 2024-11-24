@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Login | Pizzeria Sole Machina</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css"/>
   </head>
   <body class="inlogScherm">
     <div class="login-container">
       <form class="login-form">
         <div class="loginTitle">
           <h1>Pizzaria Sola Machina</h1>
-          <button id="homeButton" onclick="location.href='home.html'" type="button"> <!--default type = submit-->
+          <button
+            id="homeButton"
+            onclick="location.href='home.html'"
+            type="button">
+            <!--default type = submit-->
             Ga naar home pagina
-          </button>
-          <h1></h1>
+          </button><br/>
         </div>
         <h2>Inloggen</h2>
         <label for="user-type">Type login:</label>
-        <select id="user-type" name="user-type" required>
-            <option value="staff">Personeel</option>
+        <select id="user-type" name="user-type" size="1">
+          <option value="staff">Personeel</option>
         </select>
         <label for="staffID">Personeel ID</label>
         <input
@@ -27,33 +30,24 @@
           id="staffID"
           name="Personeel ID"
           placeholder="Geef personeel ID op"
-          required
-        />
-
+          required/>
         <label for="usernameStaff">Gebruikersnaam</label>
         <input
           type="text"
           id="usernameStaff"
           name="username"
           placeholder="Voer je gebruikersnaam in"
-          required
-        />
-
+          required/>
         <label for="passwordStaff">Wachtwoord</label>
         <input
           type="password"
           id="passwordStaff"
           name="Wachtwoord"
           placeholder="Voer je wachtwoord in"
-          required
-        />
-
-        <button
-        onclick="location.href='accountPaginaStaff.html'"
-        type="button"
-        >Inloggen
+          required/>
+        <button onclick="location.href='accountPaginaStaff.html'" type="button">
+          Inloggen
         </button>
-        </div>
       </form>
     </div>
   </body>

@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Login | Pizzeria Sole Machina</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css"/>
   </head>
   <body class="inlogScherm">
     <div class="login-container">
@@ -14,53 +14,42 @@
           <button
             id="homeButton"
             onclick="location.href='home.html'"
-            type="button"
-          >
-            <!--default type = submit-->
-            Ga naar home pagina
-          </button>
-          <h1></h1>
+            type="button">Ga naar home pagina</button><br><!--default type = submit-->
         </div>
         <h2>Inloggen</h2>
         <label for="user-type">Type login:</label>
-        <select id="user-type" name="user-type" required>
+        <select id="user-type" name="user-type">
           <option value="user">Klant</option>
         </select>
-
         <label for="usernameUser">Gebruikersnaam</label>
         <input
           type="text"
           id="usernameUser"
           name="username"
           placeholder="Voer je gebruikersnaam in"
-          required
-        />
-
+          required/>
         <label for="passwordUser">Wachtwoord</label>
         <input
           type="password"
           id="passwordUser"
           name="password"
           placeholder="Voer je wachtwoord in"
-          required
-        />
-
-        <button onclick="location.href='accountPaginaUser.html'" type="submit">Inloggen</button>
+          required/>
+        <button onclick="location.href='accountPaginaUser.html'" type="submit">
+          Inloggen
+        </button>
 
         <div class="andereLoginKeuze">
           <h1></h1>
-          <a href="/HTML/accountRegisreren.html">Nog geen account? Registreer hier</a>
-          <br />
-          <br />
+          <a href="/HTML/accountRegisreren.html"
+            >Nog geen account? Registreer hier</a><br/><br/>
         </div>
         <h2>Personeel?</h2>
       </form>
-      <button 
-      class="staffLogin"
-      onclick="location.href='inlogPersoneel.html'"
-      type="button"
-      >Klik hier om in te loggen
-      </button>
+      <button
+        class="staffLogin"
+        onclick="location.href='inlogPersoneel.html'"
+        type="button">Klik hier om in te loggen</button>
     </div>
   </body>
 </html>
