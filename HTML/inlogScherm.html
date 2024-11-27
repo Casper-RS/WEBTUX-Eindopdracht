@@ -2,54 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Pizzeria Sole Machina</title>
-    <link rel="stylesheet" href="/CSS/style.css"/>
+    <link rel="stylesheet" href="/CSS/style.css" />
   </head>
   <body class="inlogScherm">
-    <div class="login-container">
-      <form class="login-form" method="get" action="/HTML/accountPaginaUser.html">
-        <div class="loginTitle">
-          <h1>Pizzaria Sola Machina</h1>
-          <button
-            id="homeButton"
-            onclick="location.href='home.html'"
-            type="button">Ga naar home pagina</button><br><!--default type = submit-->
-        </div>
-        <h2>Inloggen</h2>
-        <label for="user-type">Type login:</label>
-        <select id="user-type" name="user-type">
-          <option value="user">Klant</option>
-        </select>
-        <label for="usernameUser">Gebruikersnaam</label>
-        <input
-          type="text"
-          id="usernameUser"
-          name="username"
-          placeholder="Voer je gebruikersnaam in"
-          required/>
-        <label for="passwordUser">Wachtwoord</label>
-        <input
-          type="password"
-          id="passwordUser"
-          name="password"
-          placeholder="Voer je wachtwoord in"
-          required/>
-        <button type="submit">
-          Inloggen
-        </button>
+    <header>
+      <div class="logo">
+        <h1>Sole Machina</h1>
+        <p>Elke dag vers bereid!</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/HTML/home.html">Home</a></li>
+          <li><a href="/HTML/pizza.html">Pizza's</a></li>
+          <li><a href="/HTML/inlogScherm.html">Account</a></li>
+          <li>
+            <a href="/HTML/winkelmand.html">
+              <span class="cart-icon">
+                <!-- <img src="/Images/shopping-cart.png" alt="cart"/> -->
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-container">
+        <form
+          class="login-form"
+          method="get"
+          action="/HTML/accountPaginaUser.html"
+        >
+          <div class="loginTitle">
+            <h1>Pizzaria Sola Machina</h1>
+            <button
+              id="homeButton"
+              onclick="location.href='home.html'"
+              type="button"
+            >
+              Ga naar home pagina</button
+            ><br /><!--default type = submit-->
+          </div>
+          <h2>Inloggen</h2>
+          <label for="user-type">Type login:</label>
+          <select id="user-type" name="user-type">
+            <option value="user">Klant</option>
+          </select>
+          <label for="usernameUser">Gebruikersnaam</label>
+          <input
+            type="text"
+            id="usernameUser"
+            name="username"
+            placeholder="Voer je gebruikersnaam in"
+            required
+          />
+          <label for="passwordUser">Wachtwoord</label>
+          <input
+            type="password"
+            id="passwordUser"
+            name="password"
+            placeholder="Voer je wachtwoord in"
+            required
+          />
+          <button type="submit">Inloggen</button>
 
-        <div class="andereLoginKeuze">
-          <h1></h1>
-          <a href="/HTML/accountRegisreren.html"
-            >Nog geen account? Registreer hier</a><br/><br/>
-        </div>
-        <h2>Personeel?</h2>
-      </form>
-      <button
-        class="staffLogin"
-        onclick="location.href='inlogPersoneel.html'"
-        type="button">Klik hier om in te loggen</button>
-    </div>
+          <div class="andereLoginKeuze">
+            <h1></h1>
+            <a href="/HTML/accountRegisreren.html"
+              >Nog geen account? Registreer hier</a
+            ><br /><br />
+          </div>
+          <h2>Personeel?</h2>
+        </form>
+        <button
+          class="staffLogin"
+          onclick="location.href='inlogPersoneel.html'"
+          type="button"
+        >
+          Klik hier om in te loggen
+        </button>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Sole Machina. Alle rechten voorbehouden.</p>
+    </footer>
   </body>
 </html>

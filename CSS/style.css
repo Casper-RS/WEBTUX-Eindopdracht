@@ -15,6 +15,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    
 
 }
 
@@ -106,7 +109,6 @@ nav ul li a:hover{
 
 .popular-pizzas {
     padding: 2rem;
-
     text-align: center;
 }
 
@@ -120,6 +122,7 @@ nav ul li a:hover{
     justify-content: center;
     gap: 2rem;
     flex-wrap: wrap;
+    margin-bottom: 11.9rem;
 }
 
 .pizza {
@@ -133,8 +136,7 @@ nav ul li a:hover{
 
 footer {
     position: sticky;
-    bottom: 0;
-    margin-top: 12rem;
+    bottom: 0rem;
     text-align: center;
     padding: 1rem;
     background-image: url(/Images/bg.jpg);
@@ -151,12 +153,17 @@ footer {
     width: 200px;
     padding: 1rem;
     text-align: center;
+    margin-bottom: 0;
 }
 
 .pizzaListItem .pizzaPic {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 1rem;
+}
+
+.pizza-list {
+    margin: 1.6rem;
 }
 
 button {
@@ -182,22 +189,8 @@ button:hover {
     background-color: orange;
     border-radius: 10px;
     font-size: 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
     text-align: center;
 }
-
-.footerPizza{
-    position: sticky;
-    bottom: 0;
-    margin-top: 22.7rem;
-    text-align: center;
-    padding: 1rem;
-    background-image: url(/Images/bg.jpg);
-    color: white;
-
-}
-
 
 .popup {
     position: fixed;
@@ -205,7 +198,7 @@ button:hover {
     left: 50%;
     transform: translateX(-50%);
     width: 100% auto;
-    max-width: 500px auto;
+    max-width: 300px auto;
     background-color: #fdf4e3;
     color: rgb(228, 173, 54);
     padding: 20px;
@@ -227,7 +220,7 @@ button:hover {
 }
 
 .close-btn {
-    position: absolute;
+    position: fixed;
     top: 10px;
     right: 20px;
     font-size: 24px;
@@ -254,8 +247,6 @@ button:hover {
     margin: 0;
     padding: 0;
     background-color: #fdf4e3;
-    display: flex;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -280,7 +271,8 @@ button:hover {
     border-style: solid;
 }
 .login-container {
-    justify-content: center;
+    margin: 1rem;
+    justify-self: center;
     align-items: center;
     background-color: white;
     padding: 3rem;

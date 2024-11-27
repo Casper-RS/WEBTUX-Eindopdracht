@@ -7,48 +7,74 @@
     <link rel="stylesheet" href="/CSS/style.css"/>
   </head>
   <body class="inlogScherm">
-    <div class="login-container">
-      <form class="login-form" method="get" action="/HTML/accountPaginaStaff.html">
-        <div class="loginTitle">
-          <h1>Pizzaria Sola Machina</h1>
-          <button
-            id="homeButton"
-            onclick="location.href='home.html'"
-            type="button">
-            <!--default type = submit-->
-            Ga naar home pagina
-          </button><br/>
-        </div>
-        <h2>Inloggen</h2>
-        <label for="user-type">Type login:</label>
-        <select id="user-type" name="user-type" size="1">
-          <option value="staff">Personeel</option>
-        </select>
-        <label for="staffID">Personeel ID</label>
-        <input
-          type="text"
-          id="staffID"
-          name="Personeel ID"
-          placeholder="Geef personeel ID op"
-          required/>
-        <label for="usernameStaff">Gebruikersnaam</label>
-        <input
-          type="text"
-          id="usernameStaff"
-          name="username"
-          placeholder="Voer je gebruikersnaam in"
-          required/>
-        <label for="passwordStaff">Wachtwoord</label>
-        <input
-          type="password"
-          id="passwordStaff"
-          name="Wachtwoord"
-          placeholder="Voer je wachtwoord in"
-          required/>
-        <button type="submit">
-          Inloggen
-        </button>
-      </form>
-    </div>
+    <header>
+      <div class="logo">
+        <h1>Sole Machina</h1>
+        <p>Elke dag vers bereid!</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/HTML/home.html">Home</a></li>
+          <li><a href="/HTML/pizza.html">Pizza's</a></li>
+          <li><a href="/HTML/inlogScherm.html">Account</a></li>
+          <li>
+            <a href="/HTML/winkelmand.html">
+              <span class="cart-icon">
+                <!-- <img src="/Images/shopping-cart.png" alt="cart"/> -->
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login-container">
+        <form class="login-form" method="get" action="/HTML/accountPaginaStaff.html">
+          <div class="loginTitle">
+            <h1>Pizzaria Sola Machina</h1>
+            <button
+              id="homeButton"
+              onclick="location.href='home.html'"
+              type="button">
+              <!--default type = submit-->
+              Ga naar home pagina
+            </button><br/>
+          </div>
+          <h2>Inloggen</h2>
+          <label for="user-type">Type login:</label>
+          <select id="user-type" name="user-type" size="1">
+            <option value="staff">Personeel</option>
+          </select>
+          <label for="staffID">Personeel ID</label>
+          <input
+            type="text"
+            id="staffID"
+            name="Personeel ID"
+            placeholder="Geef personeel ID op"
+            required/>
+          <label for="usernameStaff">Gebruikersnaam</label>
+          <input
+            type="text"
+            id="usernameStaff"
+            name="username"
+            placeholder="Voer je gebruikersnaam in"
+            required/>
+          <label for="passwordStaff">Wachtwoord</label>
+          <input
+            type="password"
+            id="passwordStaff"
+            name="Wachtwoord"
+            placeholder="Voer je wachtwoord in"
+            required/>
+          <button type="submit">
+            Inloggen
+          </button>
+        </form>
+      </div>
+    </main>
+  <footer>
+    <p>&copy; 2024 Sole Machina. Alle rechten voorbehouden.</p>
+  </footer>
   </body>
 </html>
