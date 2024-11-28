@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Pizzeria Sole Machina</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   </head>
   <body class="inlogScherm">
     <header>
@@ -56,6 +60,7 @@
             id="usernameUser"
             name="username"
             placeholder="Voer je gebruikersnaam in"
+            pattern="{6-20}"
             required
           />
           <label for="passwordUser">Wachtwoord</label>
@@ -64,15 +69,15 @@
             id="passwordUser"
             name="password"
             placeholder="Voer je wachtwoord in"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
             required
           />
           <button type="submit">Inloggen</button>
 
           <div class="andereLoginKeuze">
-            <h1></h1>
             <a href="/HTML/accountRegisreren.html"
               >Nog geen account? Registreer hier</a
-            ><br /><br />
+            >
           </div>
           <h2>Personeel?</h2>
         </form>
@@ -87,6 +92,7 @@
     </main>
     <footer>
       <p>&copy; 2024 Sole Machina. Alle rechten voorbehouden.</p>
+      <p><a href="/HTML/privacybeleid.html">Privacy & Voorwaarden</a></p>
     </footer>
   </body>
 </html>

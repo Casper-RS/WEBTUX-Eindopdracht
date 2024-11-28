@@ -17,10 +17,7 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
-    
-
 }
-
 
 header .logo h1 {
     margin: 0;
@@ -30,6 +27,27 @@ header .logo h1 {
 header .logo p {
     margin: 0;
     font-size: 1rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer p a {
+    color: white;
+}
+
+footer p a:hover{
+    color: rgb(228, 173, 54);
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    padding: 1rem;
+    background-image: url(/Images/bg.jpg);
+    color: white;
 }
 
 nav ul {
@@ -68,6 +86,11 @@ nav ul li a:hover{
     background-color:   rgb(255, 205, 7, 0.5);
 }
 
+.privacyPage {
+    text-align: center;
+    list-style-position: inside;
+}
+
 /* ========================================= Home pagina CSS ========================================= */
 .homePage {
     border-bottom-left-radius: 10px;
@@ -78,6 +101,10 @@ nav ul li a:hover{
     background-size: cover;
     background-position: center;
     color: rgb(250, 246, 246);
+}
+
+.homeFooter {
+    margin-top: 8.3rem;
 }
 
 .homePage h2 {
@@ -134,15 +161,6 @@ nav ul li a:hover{
     text-align: center;
 }
 
-footer {
-    position: sticky;
-    bottom: 0rem;
-    text-align: center;
-    padding: 1rem;
-    background-image: url(/Images/bg.jpg);
-    color: white;
-}
-
 /* ========================================= Pizza pagina CSS ========================================= */
 .pizzaListItem {
     /* display: grid;
@@ -163,7 +181,8 @@ footer {
 }
 
 .pizza-list {
-    margin: 1.6rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 button {
@@ -235,7 +254,7 @@ button:hover {
         top: -100%;
     }
     100% {
-        top: 100px; /* Of pas deze waarde aan voor de positie waar je popup moet eindigen */
+        top: 90px; /* Of pas deze waarde aan voor de positie waar je popup moet eindigen */
     }
 }
 /* ========================================= Inlog pagina CSS ====================================== */
@@ -289,7 +308,7 @@ button:hover {
 
 .login-form h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin: 1rem;
     color: darkorange;
 }
 
@@ -298,10 +317,6 @@ button:hover {
     text-decoration: underline;
     margin-bottom: 1rem;
     color: rgb(228, 188, 102);
-}
-
-.staffLogin {
-    margin-left: 6rem;
 }
 
 select,
@@ -330,7 +345,8 @@ input {
 
 .andereLoginKeuze {
     text-align: center;
-    margin-top: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
     font-size: 14px;
 }
 
@@ -342,6 +358,10 @@ input {
 
 .andereLoginKeuze a:hover {
     text-decoration: underline;
+}
+
+.staffLogin {
+    margin-left: 5.9rem;
 }
 
 /* ========================================= User Account pagina CSS ========================================= */
@@ -503,6 +523,7 @@ input {
 }
 
 .quantity-input {
+    margin-top: 2rem;
     width: 60px;
     text-align: center;
     font-size: 16px;

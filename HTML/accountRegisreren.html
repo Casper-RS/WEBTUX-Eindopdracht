@@ -5,27 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Pizzeria Sole Machina</title>
     <link rel="stylesheet" href="/CSS/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   </head>
+  <header>
+    <div class="logo">
+      <h1>Sole Machina</h1>
+      <p>Elke dag vers bereid!</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/HTML/home.html">Home</a></li>
+        <li><a href="/HTML/pizza.html">Pizza's</a></li>
+        <li><a href="/HTML/inlogScherm.html">Account</a></li>
+        <li>
+          <a href="/HTML/winkelmand.html">
+            <span class="cart-icon">
+              <!-- <img src="/Images/shopping-cart.png" alt="cart"/> -->
+              <i class="fa fa-shopping-cart"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
   <body class="inlogScherm">
     <div class="login-container">
-      <form class="login-form">
+      <form class="login-form" method="get" action="/HTML/inlogScherm.html">
         <div class="loginTitle">
           <h1>Pizzaria Sola Machina</h1>
-          <button id="homeButton" onclick="location.href='home.html'" type="button"> Ga naar home pagina </button> <!--Default = submit-->
-          <br>
+          <button
+            id="homeButton"
+            onclick="location.href='home.html'"
+            type="button"
+          >
+            Ga naar home pagina
+          </button>
+          <!--Default = submit-->
+          <br />
         </div>
         <h2>Registreer Account</h2>
         <label for="createUsername">Gebruikersnaam</label>
-        <input type="text" id="createUsername" name="username" placeholder="Kies een gebruikersnaam" required/>
+        <input
+          type="text"
+          id="createUsername"
+          name="username"
+          placeholder="Kies een gebruikersnaam" 
+          pattern="{6, 20}"
+          required
+        />
 
         <label for="createPassword">Wachtwoord</label>
-        <input type="password" id="createPassword" name="Wachtwoord" placeholder="Kies een wachtwoord" required/>
+        <input
+          type="password"
+          id="createPassword"
+          name="Wachtwoord"
+          placeholder="Kies een wachtwoord"
+          pattern="pattern=(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          required
+        />
 
         <label for="createEmail">Emailadres</label>
-        <input type="text" id="createEmail" name="Emailadres" placeholder="Voer emailadres in" required/>
+        <input
+          autocomplete="email"
+          type="email"
+          id="createEmail"
+          name="Emailadres"
+          placeholder="Voer emailadres in"
+          required
+        />
 
         <label for="createPhone">TelefoonNummer</label>
-        <input type="text" id="createPhone" name="Telefoonnummer" placeholder="Geef uw telefoon nummer op" required/>
+        <input
+          type="tel"
+          id="createPhone"
+          name="Telefoonnummer"
+          placeholder="Geef uw telefoon nummer op"
+          pattern="[0-9]{2}-[0-9]{8}"
+          
+        />
 
         <button type="submit">Registreer</button>
         <div class="andereLoginKeuze">
@@ -35,5 +95,9 @@
         </div>
       </form>
     </div>
+    <footer>
+      <p>&copy; 2024 Sole Machina. Alle rechten voorbehouden.</p>
+      <p><a href="/HTML/privacybeleid.html">Privacy & Voorwaarden</a></p>
+    </footer>
   </body>
 </html>

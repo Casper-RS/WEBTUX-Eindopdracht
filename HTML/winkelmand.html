@@ -94,7 +94,35 @@
           <i class="removeItem"></i>
         </button>
       </div>
-
+      <div class="cart-item">
+        <img
+          src="/Images/4kaas.png"
+          alt="Pizza Pepperoni"
+          class="cart-item-img"
+        />
+        <div class="cart-item-details">
+          <h3>Pizza Quattro Formaggi</h3>
+          <p>Prijs: €15,00</p>
+          <br />
+          <div class="quantity-control">
+            <button class="minus-btn">-</button>
+            <input
+              type="number"
+              id="quantity2"
+              name="quantity2"
+              min="1"
+              max="10"
+              value="2"
+              class="quantity-input"
+            />
+            <button class="plus-btn">+</button>
+          </div>
+        </div>
+        <button class="remove-btn">
+          <img src="/Images/recycle-bin.png" alt="trashcan" />
+          <i class="removeItem"></i>
+        </button>
+      </div>
       <div class="cart-total">
         <h3>Totaal: €32,00</h3>
         <button
@@ -105,9 +133,9 @@
         </button>
       </div>
     </main>
-
-    <footer class="footerBasket">
-      <p>&copy; 2024 Pizzeria Bella Italia. Alle rechten voorbehouden.</p>
+    <footer>
+      <p>&copy; 2024 Sole Machina. Alle rechten voorbehouden.</p>
+      <p><a href="/HTML/privacybeleid.html">Privacy & Voorwaarden</a></p>
     </footer>
   </body>
 </html>
