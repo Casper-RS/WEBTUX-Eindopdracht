@@ -216,8 +216,8 @@ button:hover {
     top: -100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100% auto;
-    max-width: 300px auto;
+    width: auto;
+    max-width: 300px;
     background-color: #fdf4e3;
     color: rgb(228, 173, 54);
     padding: 20px;
@@ -229,13 +229,13 @@ button:hover {
 }
 
 .popup-content h2 {
-    font-size: 24px auto;
-    margin-bottom: 10px auto;
+    font-size: 24px;
+    margin-bottom: auto;
 }
 
 .popup-content p {
-    font-size: 18px auto;
-    margin-bottom: 15px auto;
+    font-size: 15px;
+    margin-bottom: auto;
 }
 
 .close-btn {
