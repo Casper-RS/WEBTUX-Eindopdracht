@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Pizzeria Sole Machina</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
   <body class="inlogScherm">
     <header>
@@ -24,7 +21,6 @@
           <li>
             <a href="/HTML/winkelmand.html">
               <span class="cart-icon">
-                <!-- <img src="/Images/shopping-cart.png" alt="cart"/> -->
                 <i class="fa fa-shopping-cart"></i>
               </span>
             </a>
@@ -37,17 +33,10 @@
         <form
           class="login-form"
           method="get"
-          action="/HTML/accountPaginaUser.html"
-        >
+          action="/HTML/accountPaginaUser.html">
           <div class="loginTitle">
             <h1>Pizzaria Sola Machina</h1>
-            <button
-              id="homeButton"
-              onclick="location.href='home.html'"
-              type="button"
-            >
-              Ga naar home pagina</button
-            ><br /><!--default type = submit-->
+            <button id="homeButton" onclick="location.href='home.html'" type="button"> Ga naar home pagina</button>
           </div>
           <h2>Inloggen</h2>
           <label for="user-type">Type login:</label>
@@ -61,8 +50,7 @@
             name="username"
             placeholder="Voer je gebruikersnaam in"
             pattern="{6-20}"
-            required
-          />
+            required/>
           <label for="passwordUser">Wachtwoord</label>
           <input
             type="password"
@@ -70,22 +58,14 @@
             name="password"
             placeholder="Voer je wachtwoord in"
             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            required
-          />
+            required/>
           <button type="submit">Inloggen</button>
-
           <div class="andereLoginKeuze">
-            <a href="/HTML/accountRegisreren.html"
-              >Nog geen account? Registreer hier</a
-            >
+            <a href="/HTML/accountRegisreren.html">Nog geen account? Registreer hier</a>
           </div>
           <h2>Personeel?</h2>
         </form>
-        <button
-          class="staffLogin"
-          onclick="location.href='inlogPersoneel.html'"
-          type="button"
-        >
+        <button class="staffLogin" onclick="location.href='inlogPersoneel.html'" type="button">
           Klik hier om in te loggen
         </button>
       </div>

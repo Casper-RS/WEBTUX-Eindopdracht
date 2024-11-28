@@ -5,46 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Pizzeria Sole Machina</title>
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
   </head>
-  <header>
-    <div class="logo">
-      <h1>Sole Machina</h1>
-      <p>Elke dag vers bereid!</p>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/HTML/home.html">Home</a></li>
-        <li><a href="/HTML/pizza.html">Pizza's</a></li>
-        <li><a href="/HTML/inlogScherm.html">Account</a></li>
-        <li>
-          <a href="/HTML/winkelmand.html">
-            <span class="cart-icon">
-              <!-- <img src="/Images/shopping-cart.png" alt="cart"/> -->
-              <i class="fa fa-shopping-cart"></i>
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
   <body class="inlogScherm">
+    <header>
+      <div class="logo">
+        <h1>Sole Machina</h1>
+        <p>Elke dag vers bereid!</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/HTML/home.html">Home</a></li>
+          <li><a href="/HTML/pizza.html">Pizza's</a></li>
+          <li><a href="/HTML/inlogScherm.html">Account</a></li>
+          <li>
+            <a href="/HTML/winkelmand.html">
+              <span class="cart-icon">
+                <i class="fa fa-shopping-cart"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <div class="login-container">
       <form class="login-form" method="get" action="/HTML/inlogScherm.html">
         <div class="loginTitle">
           <h1>Pizzaria Sola Machina</h1>
-          <button
-            id="homeButton"
-            onclick="location.href='home.html'"
-            type="button"
-          >
-            Ga naar home pagina
-          </button>
-          <!--Default = submit-->
-          <br />
+          <button id="homeButton" onclick="location.href='home.html'" type="button">Ga naar home pagina</button>
         </div>
         <h2>Registreer Account</h2>
         <label for="createUsername">Gebruikersnaam</label>
@@ -54,9 +42,7 @@
           name="username"
           placeholder="Kies een gebruikersnaam" 
           pattern="{6, 20}"
-          required
-        />
-
+          required/>
         <label for="createPassword">Wachtwoord</label>
         <input
           type="password"
@@ -64,9 +50,7 @@
           name="Wachtwoord"
           placeholder="Kies een wachtwoord"
           pattern="pattern=(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-          required
-        />
-
+          required/>
         <label for="createEmail">Emailadres</label>
         <input
           autocomplete="email"
@@ -74,24 +58,17 @@
           id="createEmail"
           name="Emailadres"
           placeholder="Voer emailadres in"
-          required
-        />
-
+          required/>
         <label for="createPhone">TelefoonNummer</label>
         <input
           type="tel"
           id="createPhone"
           name="Telefoonnummer"
           placeholder="Geef uw telefoon nummer op"
-          pattern="[0-9]{2}-[0-9]{8}"
-          
-        />
-
+          pattern="[0-9]{2}-[0-9]{8}"/>
         <button type="submit">Registreer</button>
         <div class="andereLoginKeuze">
-          <a href="/HTML/inlogScherm.html"
-            >Ben je al een gebruiker? <br />Klik om in te loggen</a
-          >
+          <a href="/HTML/inlogScherm.html">Ben je al een gebruiker? <br />Klik om in te loggen</a>
         </div>
       </form>
     </div>
